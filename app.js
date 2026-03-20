@@ -381,6 +381,9 @@ function openDetail(plantId) {
   // Notes
   document.getElementById("detailNotes").value = d.notes || "";
 
+  // Find in Park
+  renderParkLocations(p.symbol);
+
   // Reference photo
   const refImg = document.getElementById("detailRefPhoto");
   const imgPath = `images/${p.symbol}.jpg`;
@@ -404,6 +407,50 @@ function closeDetail() {
   currentPlantId = null;
   renderPlantList();
   updateProgress();
+}
+
+// ===== PARK LOCATIONS (from CGP website) =====
+function renderParkLocations(symbol) {
+  const section = document.getElementById("findInParkSection");
+  const container = document.getElementById("parkLocations");
+  const cgpLink = document.getElementById("cgpLink");
+
+  const info = typeof PARK_LOCATIONS !== "undefined" ? PARK_LOCATIONS[symbol] : null;
+
+  if (!info) {
+    section.style.display = "none";
+    return;
+  }
+
+  section.style.display = "block";
+  let html = "";
+
+  if (info.cgpName) {
+    html += `<div style="font-size:0.8rem;color:#555;margin-bottom:6px">CGP listing: <strong>${info.cgpName}</strong></div>`;
+  }
+
+  if (info.notDisplayed) {
+    html += `<div class="park-not-displayed">Not currently on display at the park</div>`;
+  } else if (info.locations && info.locations.length) {
+    for (const loc of info.locations) {
+      html += `<div class="park-location-group">`;
+      html += `<div class="park-path-name">${loc.path}</div>`;
+      html += `<ul class="park-area-list">`;
+      for (const area of loc.areas) {
+        html += `<li>${area}</li>`;
+      }
+      html += `</ul></div>`;
+    }
+  }
+
+  container.innerHTML = html;
+
+  if (info.cgpUrl) {
+    cgpLink.href = info.cgpUrl;
+    cgpLink.style.display = "inline-block";
+  } else {
+    cgpLink.style.display = "none";
+  }
 }
 
 function renderDetailPhotos(symbol) {

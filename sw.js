@@ -1,21 +1,21 @@
-const CACHE_NAME = 'plant-scout-v2';
-const ASSETS_TO_CACHE = [
+const CACHE_NAME = 'plant-scout-v3';
+const APP_ASSETS = [
   './',
   './index.html',
   './styles.css',
   './app.js',
+  './park_locations.js',
   './manifest.json',
   './icons/icon-192.png',
   './icons/icon-512.png'
 ];
 
-// Install: cache all app assets
+// Install: cache all app assets + plant images
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(ASSETS_TO_CACHE);
+      return cache.addAll(APP_ASSETS);
     }).then(() => {
-      // Also cache all plant images
       return caches.open(CACHE_NAME).then(cache => {
         return fetch('./image-manifest.json')
           .then(r => r.json())
@@ -27,7 +27,7 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
-// Activate: clean old caches
+// Activate: clean ALL old caches immediately
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
@@ -37,23 +37,47 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
-// Fetch: cache-first strategy
+// Fetch: network-first for app files, cache-first for images
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request).then(cached => {
-      return cached || fetch(event.request).then(response => {
-        // Cache new requests dynamically
-        if (response.ok && event.request.method === 'GET') {
+  const url = new URL(event.request.url);
+  const isAppFile = url.pathname.endsWith('.html') ||
+                    url.pathname.endsWith('.js') ||
+                    url.pathname.endsWith('.css') ||
+                    url.pathname.endsWith('/');
+
+  if (isAppFile) {
+    // Network-first: try to get fresh version, fall back to cache
+    event.respondWith(
+      fetch(event.request).then(response => {
+        if (response.ok) {
           const clone = response.clone();
           caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
         }
         return response;
       }).catch(() => {
-        // Offline fallback for navigation
-        if (event.request.mode === 'navigate') {
-          return caches.match('./index.html');
-        }
-      });
-    })
-  );
+        return caches.match(event.request).then(cached => {
+          return cached || (event.request.mode === 'navigate'
+            ? caches.match('./index.html')
+            : new Response('Offline', { status: 503 }));
+        });
+      })
+    );
+  } else {
+    // Cache-first for images, icons, manifest
+    event.respondWith(
+      caches.match(event.request).then(cached => {
+        return cached || fetch(event.request).then(response => {
+          if (response.ok && event.request.method === 'GET') {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(event.request, clone));
+          }
+          return response;
+        }).catch(() => {
+          if (event.request.mode === 'navigate') {
+            return caches.match('./index.html');
+          }
+        });
+      })
+    );
+  }
 });

@@ -1,0 +1,1871 @@
+{
+  "T-1": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/913/montgomery-blue-spruce",
+    "cgp_name": "Montgomery Blue Spruce",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Parking"
+        ]
+      },
+      {
+        "path": "Planting Path",
+        "areas": [
+          "Nursery Shopping"
+        ]
+      }
+    ]
+  },
+  "T-2": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/199/pinyon-pine",
+    "cgp_name": "Pinyon Pine",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Easy Does It"
+        ]
+      },
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Fragrance Garden"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "A Desert with Altitude"
+        ]
+      }
+    ]
+  },
+  "T-3": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1592/bruns-weeping-serbian-spruce",
+    "cgp_name": "Bruns Weeping Serbian Spruce",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Outsmart Invaders",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "T-4": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/257/bigtooth-maple",
+    "cgp_name": "Bigtooth Maple",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "South Property Line"
+        ]
+      },
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Irrigation Hardware"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Park Strip Hill"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Waterwise Woodlands"
+        ]
+      }
+    ]
+  },
+  "T-5": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/753/forest-pansy-redbud",
+    "cgp_name": "Forest Pansy Redbud",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Climate Control"
+        ]
+      },
+      {
+        "path": "Planting Path",
+        "areas": [
+          "Avoiding Erosion",
+          "By mid-summer this tree will have small circles taken out of the leaves, but don&#39;t worry, it&#39;s just local leafcutter bees. This is harmless to the tree but beneficial to the bee."
+        ]
+      }
+    ]
+  },
+  "T-6": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/430/alderleaf-mountain-mahogany",
+    "cgp_name": "Alderleaf Mountain Mahogany",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Building East",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "T-7": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/490/paperbark-maple",
+    "cgp_name": "Paperbark Maple",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "South Property Line"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Rain Gardening",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "T-8": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "T-9": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1242/european-smoketree",
+    "cgp_name": "European Smoketree",
+    "locations": [
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Irrigation Hardware",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "T-10": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "T-11": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1238/arnolds-promise-witch-hazel",
+    "cgp_name": "Arnold&#39;s Promise Witch Hazel",
+    "locations": [
+      {
+        "path": "Not on display",
+        "areas": [
+          "Not on display",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "T-12": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1903/alans-apricot-ice-plant",
+    "cgp_name": "Alan&#39;s Apricot Ice Plant",
+    "locations": [
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Park Strip #8",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "T-13": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1063/canada-red-chokecherry",
+    "cgp_name": "Canada Red Chokecherry",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Garden Entrance"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Scene or Unseen"
+        ]
+      },
+      {
+        "path": "Planting Path",
+        "areas": [
+          "Perfect Planting"
+        ]
+      }
+    ]
+  },
+  "T-14": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/2941/chicago-hardy-fig",
+    "cgp_name": "Chicago Hardy Fig",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Staff Parking",
+          "Where winter temperatures drop below 25&#176;F, the fig tree must be winterized in order to stay healthy and fruit bearing. After all leaves have dropped in the fall, prune out any branches that are weak, diseased or crossing. Secure all branches in one grouping (you can tie them to each other or to a pole). Place a thick layer of mulch or leaves directly above the roots. Wrap the tree in several layers of burlap, leaving the top open for moisture and heat to escape. Finally, make a sturdy structure around the tree with stakes and/or chicken wire, and cover this structure securely in a material like floating row cover. An additional layer of mulch can be added around the base of the structure. Remove the protection when temperatures stay above freezing."
+        ]
+      }
+    ]
+  },
+  "T-15": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/668/chaparral-weeping-mulberry",
+    "cgp_name": "Chaparral Weeping Mulberry",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Building West"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-Middle"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Rain Gardening"
+        ]
+      }
+    ]
+  },
+  "T-16": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/859/beurre-danjou-pear",
+    "cgp_name": "Beurre D&#39;Anjou Pear",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "The Produce Section",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "T-17": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "T-18": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "T-19": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/251/apache-plume",
+    "cgp_name": "Apache Plume",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Parking",
+          "North Property Line"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-West",
+          "Scene or Unseen"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "A Desert with Altitude"
+        ]
+      }
+    ]
+  },
+  "T-20": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/160/bird-cherry",
+    "cgp_name": "Bird Cherry",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Traditional Yet Thrifty",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-1": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1673/hetz-midget-arborvitae",
+    "cgp_name": "Hetz Midget Arborvitae",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Hardscape Exhibit",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-2": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/151/creeping-oregon-grape",
+    "cgp_name": "Creeping Oregon Grape",
+    "locations": null
+  },
+  "S-3": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1534/blue-arrow-juniper",
+    "cgp_name": "Blue Arrow Juniper",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Building East"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Hardscape Exhibit"
+        ]
+      }
+    ]
+  },
+  "S-4": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "S-5": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1200/black-lace-elderberry",
+    "cgp_name": "Black Lace Elderberry",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Plaza",
+          "JVWCD Building East",
+          "JVWCD Building West",
+          "JVWCD Flag Pole",
+          "JVWCD Rock Garden"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Localscapes Exhibit"
+        ]
+      }
+    ]
+  },
+  "S-6": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1835/color-guard-yucca",
+    "cgp_name": "Color Guard Yucca",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Parking"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Park Strip #3"
+        ]
+      }
+    ]
+  },
+  "S-7": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "S-8": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "S-9": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/318/gooseberry-leaf-globemallow",
+    "cgp_name": "Gooseberry-Leaf Globemallow",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Moving Day"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "A Desert with Altitude"
+        ]
+      }
+    ]
+  },
+  "S-10": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/502/aphrodite-rose-of-sharon",
+    "cgp_name": "Aphrodite Rose of Sharon",
+    "locations": [
+      {
+        "path": "Not on display",
+        "areas": [
+          "Not on display",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-11": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/3038/fire-light-hydrangea",
+    "cgp_name": "Fire Light Hydrangea",
+    "locations": [
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Irrigation Hardware",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-12": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "S-13": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/22/english-lavender",
+    "cgp_name": "English Lavender",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Building West"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Harvest Haven",
+          "Prudent Perennials"
+        ]
+      }
+    ]
+  },
+  "S-14": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1886/beijing-gold-tree-lilac",
+    "cgp_name": "Beijing Gold Tree Lilac",
+    "locations": [
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Localscapes Exhibit",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-15": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/709/cheyenne-mock-orange",
+    "cgp_name": "Cheyenne Mock Orange",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Waterwise Woodlands",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-16": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/204/nanking-cherry",
+    "cgp_name": "Nanking Cherry",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Rock Garden"
+        ]
+      },
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Irrigation Hardware"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Outsmart Invaders",
+          "Rain Gardening"
+        ]
+      }
+    ]
+  },
+  "S-17": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "S-18": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/748/diabolo-ninebark",
+    "cgp_name": "Diabolo Ninebark",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Parking",
+          "Education Center Plaza"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-East",
+          "Hardscape Exhibit",
+          "Survey First"
+        ]
+      }
+    ]
+  },
+  "S-19": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1181/summer-wine-ninebark",
+    "cgp_name": "Summer Wine Ninebark",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Scene or Unseen",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-20": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/208/red-lake-currant",
+    "cgp_name": "Red Lake Currant",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Harvest Haven",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-21": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1865/arctic-fire-red-twig-dogwood",
+    "cgp_name": "Arctic Fire Red Twig Dogwood",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Garden Entrance"
+        ]
+      },
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "The Right Way to Spray"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Park Strip Hill",
+          "Rock Wall"
+        ]
+      }
+    ]
+  },
+  "S-22": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "S-23": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1754/amore-rose-bleeding-heart",
+    "cgp_name": "Amore Rose Bleeding Heart",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Traditional Yet Thrifty",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-24": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/977/blue-spires-russian-sage",
+    "cgp_name": "Blue Spires Russian Sage",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Garden Entrance"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Rain Gardening"
+        ]
+      },
+      {
+        "path": "Planting Path",
+        "areas": [
+          "Avoiding Erosion",
+          "Signature Soils"
+        ]
+      }
+    ]
+  },
+  "S-25": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "S-26": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/173/yellow-twig-dogwood",
+    "cgp_name": "Yellow Twig Dogwood",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "South Property Line",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-27": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/251/apache-plume",
+    "cgp_name": "Apache Plume",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Parking",
+          "North Property Line"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-West",
+          "Scene or Unseen"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "A Desert with Altitude"
+        ]
+      }
+    ]
+  },
+  "S-28": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/562/cliffrose",
+    "cgp_name": "Cliffrose",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Easy Does It"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Moving Day",
+          "Outsmart Invaders"
+        ]
+      }
+    ]
+  },
+  "S-29": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/316/golden-currant",
+    "cgp_name": "Golden Currant",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-Middle",
+          "Survey First"
+        ]
+      },
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Mountain to Tap"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "North Basin",
+          "Park Strip Hill"
+        ]
+      }
+    ]
+  },
+  "S-30": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "S-31": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/242/gro-low-sumac",
+    "cgp_name": "Gro-Low Sumac",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Staff Parking",
+          "Garden Entrance",
+          "South Property Line"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-West"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Backyard Makeover"
+        ]
+      }
+    ]
+  },
+  "S-32": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1228/dwarf-blue-rabbitbrush",
+    "cgp_name": "Dwarf Blue Rabbitbrush",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Outsmart Invaders",
+          "Attracts pollinators by the droves. Especiallly native bees.",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-33": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/523/saskatoon-serviceberry",
+    "cgp_name": "Saskatoon Serviceberry",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Outsmart Invaders",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "S-34": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/678/utah-serviceberry",
+    "cgp_name": "Utah Serviceberry",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Backyard Makeover",
+          "Maintenance Matters"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Waterwise Woodlands"
+        ]
+      }
+    ]
+  },
+  "S-35": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/917/pawnee-buttes-western-sand-cherry",
+    "cgp_name": "Pawnee Buttes Western Sand Cherry",
+    "locations": [
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Fragrance Garden"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Park Strip Hill"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Moving Day"
+        ]
+      }
+    ]
+  },
+  "P-1": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1754/amore-rose-bleeding-heart",
+    "cgp_name": "Amore Rose Bleeding Heart",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Traditional Yet Thrifty",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-2": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1759/dark-and-handsome-lenten-rose",
+    "cgp_name": "Dark and Handsome Lenten Rose",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Waterwise Woodlands",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-3": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1797/jack-frost-siberian-bugloss",
+    "cgp_name": "Jack Frost Siberian Bugloss",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Prudent Perennials",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-4": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "P-5": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/743/blue-wonder-catmint",
+    "cgp_name": "Blue Wonder Catmint",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Backyard Makeover",
+          "Outsmart Invaders",
+          "Rain Gardening"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Waterwise Woodlands"
+        ]
+      }
+    ]
+  },
+  "P-6": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/100/chocolate-flower",
+    "cgp_name": "Chocolate Flower",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Parking",
+          "Garden Entrance"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Easy Does It",
+          "Winter Interest"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "A Desert with Altitude"
+        ]
+      }
+    ]
+  },
+  "P-7": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/3055/apple-crisp-coral-bells",
+    "cgp_name": "Apple Crisp Coral Bells",
+    "locations": [
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Irrigation Hardware",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-8": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1159/baby-sun-lanceleaf-coreopsis",
+    "cgp_name": "Baby Sun Lanceleaf Coreopsis",
+    "locations": [
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Paths and Pollinators"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Rain Gardening"
+        ]
+      }
+    ]
+  },
+  "P-9": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1111/big-sky-summer-sky-coneflower",
+    "cgp_name": "Big Sky Summer Sky Coneflower",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Maintenance Matters",
+          "Rain Gardening",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-10": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/2971/lemon-meringue-false-indigo",
+    "cgp_name": "Lemon Meringue False Indigo",
+    "locations": [
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Paths and Pollinators",
+          "This perennial does not transplant well due to its long taproot.",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-11": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "P-12": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/3277/bright-blue-eyes-dwarf-bearded-iris",
+    "cgp_name": "Bright Blue Eyes Dwarf Bearded Iris",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Rock Garden",
+          "Reliable rebloomer in zones 5-10."
+        ]
+      }
+    ]
+  },
+  "P-13": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/43/knautia",
+    "cgp_name": "Knautia",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Prudent Perennials",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-14": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1791/irish-silk-ladys-mantle",
+    "cgp_name": "Irish Silk Lady&#39;s Mantle",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Prudent Perennials",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-15": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "P-16": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "P-17": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/35/husker-red-penstemon",
+    "cgp_name": "Husker Red Penstemon",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Prudent Perennials",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-18": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/63/rocky-mountain-penstemon",
+    "cgp_name": "Rocky Mountain Penstemon",
+    "locations": [
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Paths and Pollinators"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Prudent Perennials",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-19": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1099/baroness-schroder-peony",
+    "cgp_name": "Baroness Schroder Peony",
+    "locations": [
+      {
+        "path": "Not on display",
+        "areas": [
+          "Not on display",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-20": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1555/prairie-smoke-avens",
+    "cgp_name": "Prairie Smoke Avens",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Initial Analysis",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-21": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1120/border-ballet-red-hot-poker",
+    "cgp_name": "Border Ballet Red-Hot Poker",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Maintenance Matters",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-22": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/209/arp-rosemary",
+    "cgp_name": "Arp Rosemary",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Scene or Unseen",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-23": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/386/berggarten-sage",
+    "cgp_name": "Berggarten Sage",
+    "locations": [
+      {
+        "path": "Planting Path",
+        "areas": [
+          "Turf Alternatives",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-24": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1695/showy-milkweed",
+    "cgp_name": "Showy Milkweed",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Parking",
+          "Education Center Staff Parking",
+          "South Property Line"
+        ]
+      },
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Mountain to Tap"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Rain Gardening"
+        ]
+      }
+    ]
+  },
+  "P-25": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1615/blue-marvel-sage",
+    "cgp_name": "Blue Marvel Sage",
+    "locations": [
+      {
+        "path": "Planting Path",
+        "areas": [
+          "Turf Alternatives",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-26": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1735/western-sundancer-daisy",
+    "cgp_name": "Western Sundancer Daisy",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Building East",
+          "JVWCD Building South"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "South Basin"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Prudent Perennials"
+        ]
+      }
+    ]
+  },
+  "P-27": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1712/common-yarrow",
+    "cgp_name": "Common Yarrow",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-Middle",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-28": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1509/apricot-sprite-hummingbird-mint",
+    "cgp_name": "Apricot Sprite Hummingbird Mint",
+    "locations": [
+      {
+        "path": "Not on display",
+        "areas": [
+          "Not on display",
+          "This Agastache, along with many others of its kind, is a short-lived perennial. Plan to replace every few years.",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-29": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1654/compact-mountain-flame-fire-chalice",
+    "cgp_name": "Compact Mountain Flame Fire Chalice",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Staff Parking",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-30": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1509/apricot-sprite-hummingbird-mint",
+    "cgp_name": "Apricot Sprite Hummingbird Mint",
+    "locations": [
+      {
+        "path": "Not on display",
+        "areas": [
+          "Not on display",
+          "This Agastache, along with many others of its kind, is a short-lived perennial. Plan to replace every few years.",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "P-31": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/3112/american-gold-rush-black-eyed-susan",
+    "cgp_name": "American Gold Rush Black Eyed Susan",
+    "locations": [
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Localscapes Exhibit",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "G-1": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1223/blonde-ambition-blue-grama-grass",
+    "cgp_name": "Blonde Ambition Blue Grama Grass",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Garden Entrance"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Easy Does It"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Localscapes Entry Beds",
+          "Localscapes Exhibit",
+          "Rock Wall"
+        ]
+      }
+    ]
+  },
+  "G-2": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/109/blue-oat-grass",
+    "cgp_name": "Blue Oat Grass",
+    "locations": null
+  },
+  "G-3": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/447/karl-foerster-feather-reed-grass",
+    "cgp_name": "Karl Foerster Feather Reed Grass",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Parking",
+          "Garden Entrance",
+          "South Property Line"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Climate Control",
+          "Hardscape Exhibit",
+          "Winter Interest"
+        ]
+      }
+    ]
+  },
+  "G-4": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/942/blaze-little-bluestem",
+    "cgp_name": "Blaze Little Bluestem",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Garden Entrance"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-West",
+          "Winter Interest"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Park Strip #2",
+          "Park Strip #7"
+        ]
+      }
+    ]
+  },
+  "G-5": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/3136/tufted-hairgrass",
+    "cgp_name": "Tufted Hairgrass",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Building West",
+          "JVWCD Flag Pole",
+          "JVWCD Parking",
+          "South Property Line"
+        ]
+      }
+    ]
+  },
+  "G-6": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/516/sideoats-grama",
+    "cgp_name": "Sideoats Grama",
+    "locations": [
+      {
+        "path": "Irrigation Path",
+        "areas": [
+          "Mountain to Tap"
+        ]
+      },
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "North Basin",
+          "Rock Wall",
+          "South Basin"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Rain Gardening"
+        ]
+      }
+    ]
+  },
+  "GC-1": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/3057/pink-lightning-ajuga",
+    "cgp_name": "Pink Lightning Ajuga",
+    "locations": [
+      {
+        "path": "Not on display",
+        "areas": [
+          "Not on display",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "GC-2": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "GC-3": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/3057/pink-lightning-ajuga",
+    "cgp_name": "Pink Lightning Ajuga",
+    "locations": [
+      {
+        "path": "Not on display",
+        "areas": [
+          "Not on display",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "GC-4": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "GC-5": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1545/candy-stripes-creeping-phlox",
+    "cgp_name": "Candy Stripes Creeping Phlox",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Plaza"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Backyard Makeover"
+        ]
+      }
+    ]
+  },
+  "GC-6": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1903/alans-apricot-ice-plant",
+    "cgp_name": "Alan&#39;s Apricot Ice Plant",
+    "locations": [
+      {
+        "path": "Localscapes Path",
+        "areas": [
+          "Park Strip #8",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "GC-7": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/267/dragons-blood-stonecrop",
+    "cgp_name": "Dragon&#39;s Blood Stonecrop",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Plaza"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-West"
+        ]
+      }
+    ]
+  },
+  "GC-8": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/327/kinnikinnick",
+    "cgp_name": "Kinnikinnick",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Winter Interest",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "GC-9": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "GC-10": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/426/littleleaf-pussytoes",
+    "cgp_name": "Littleleaf Pussytoes",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "A Desert with Altitude",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "GC-11": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/291/prairie-winecups",
+    "cgp_name": "Prairie Winecups",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Garden Entrance",
+          "South Property Line"
+        ]
+      },
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Maintenance Matters"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "A Desert with Altitude"
+        ]
+      }
+    ]
+  },
+  "GC-12": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/480/sweet-woodruff",
+    "cgp_name": "Sweet Woodruff",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-East",
+          "Design Ideas-Middle",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "GC-13": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/607/creeping-thyme",
+    "cgp_name": "Creeping Thyme",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-East",
+          "Design Ideas-West",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "GC-14": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/97/woolly-thyme",
+    "cgp_name": "Woolly Thyme",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Rock Garden"
+        ]
+      },
+      {
+        "path": "Design Path",
+        "areas": [
+          "Design Ideas-West",
+          "Hardscape Exhibit"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Traditional Yet Thrifty"
+        ]
+      }
+    ]
+  },
+  "V-1": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/586/goldflame-honeysuckle",
+    "cgp_name": "Goldflame Honeysuckle",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Outsmart Invaders"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Waterwise Woodlands"
+        ]
+      }
+    ]
+  },
+  "V-2": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/222/concord-grape",
+    "cgp_name": "Concord Grape",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Harvest Haven",
+          "To maximize fruit production training, pruning, and regular spraying are required. Consult your local extension agency for specific instructions."
+        ]
+      }
+    ]
+  },
+  "V-3": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/436/chinook-hop",
+    "cgp_name": "Chinook Hop",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Building East",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "V-4": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/151/creeping-oregon-grape",
+    "cgp_name": "Creeping Oregon Grape",
+    "locations": null
+  },
+  "V-5": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "V-6": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1235/major-wheeler-honeysuckle",
+    "cgp_name": "Major Wheeler Honeysuckle",
+    "locations": [
+      {
+        "path": "Maintenance Path",
+        "areas": [
+          "Backyard Makeover"
+        ]
+      },
+      {
+        "path": "Planting Path",
+        "areas": [
+          "Nursery Shopping",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "V-7": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "V-8": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1652/blue-moon-wisteria",
+    "cgp_name": "Blue Moon Wisteria",
+    "locations": [
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Traditional Yet Thrifty",
+          "Blooms best if pruned immediately after the flowers fade."
+        ]
+      }
+    ]
+  },
+  "C-1": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "C-2": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "C-3": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "C-4": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1558/all-gold-lemon-balm",
+    "cgp_name": "All Gold Lemon Balm",
+    "locations": [
+      {
+        "path": "Design Path",
+        "areas": [
+          "Initial Analysis",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "C-5": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/3092/carnival-limeade-coral-bells",
+    "cgp_name": "Carnival Limeade Coral Bells",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "Education Center Plaza",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "C-6": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "C-7": {
+    "found": false,
+    "cgp_url": null,
+    "cgp_name": null,
+    "locations": null
+  },
+  "B-1": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1013/blue-globe-onion",
+    "cgp_name": "Blue Globe Onion",
+    "locations": [
+      {
+        "path": "Planting Path",
+        "areas": [
+          "Nursery Shopping",
+          "Spring"
+        ]
+      }
+    ]
+  },
+  "B-2": {
+    "found": true,
+    "cgp_url": "https://conservationgardenpark.jvwcd.gov/plants/1034/snowdrop",
+    "cgp_name": "Snowdrop",
+    "locations": [
+      {
+        "path": "Commercial Concepts",
+        "areas": [
+          "JVWCD Building West"
+        ]
+      },
+      {
+        "path": "Neighborhood Landscapes",
+        "areas": [
+          "Waterwise Woodlands"
+        ]
+      }
+    ]
+  }
+}
