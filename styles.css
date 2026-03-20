@@ -742,6 +742,94 @@ body {
   transform: translateX(-50%) translateY(0);
 }
 
+/* ===== PARK MAP VIEW ===== */
+.park-map-view {
+  padding-bottom: 80px;
+  overflow-y: auto;
+}
+
+.park-section-header {
+  background: var(--green);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+  margin-top: 4px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.park-zone-block {
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.park-zone-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--white);
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.park-zone-header:active {
+  background: var(--cream-dark);
+}
+
+.zone-num-badge {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: var(--green);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.park-zone-name {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.zone-plant-count {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  white-space: nowrap;
+}
+
+.zone-chevron {
+  font-size: 1.3rem;
+  color: var(--gray);
+  transform: rotate(0deg);
+  transition: transform 0.2s;
+  line-height: 1;
+}
+
+.park-zone-block.open .zone-chevron {
+  transform: rotate(90deg);
+}
+
+.park-zone-plants {
+  display: none;
+  background: var(--cream);
+  padding: 0 8px 8px;
+}
+
+.park-zone-block.open .park-zone-plants {
+  display: block;
+}
+
 /* ===== VIEW HEADERS ===== */
 .view-header {
   padding: 16px 16px 4px;

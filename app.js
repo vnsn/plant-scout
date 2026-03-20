@@ -642,46 +642,190 @@ function renderFavorites() {
   });
 }
 
-// ===== ZONES VIEW =====
-function renderZones() {
-  const container = document.getElementById("zoneList");
-  const grouped = {};
-  for (const p of PLANTS) {
-    const d = userData[p.symbol];
-    if (d && d.zone) {
-      if (!grouped[d.zone]) grouped[d.zone] = [];
-      grouped[d.zone].push(p);
+// ===== PARK MAP VIEW =====
+
+// Numbered zones from the CGP park map, in order
+const PARK_ZONE_ORDER = [
+  // Example Landscapes
+  { num: 1,  name: "A Desert with Altitude",   section: "Example Landscapes" },
+  { num: 2,  name: "Harvest Haven",             section: "Example Landscapes" },
+  { num: 3,  name: "Prudent Perennials",         section: "Example Landscapes" },
+  { num: 4,  name: "Traditional Yet Thrifty",    section: "Example Landscapes" },
+  { num: 5,  name: "Tradition with a Twist",     section: "Example Landscapes" },
+  { num: 6,  name: "Waterwise Woodlands",        section: "Example Landscapes" },
+  // Localscapes
+  { num: 7,  name: "Paths and Pollinators",      section: "Localscapes" },
+  { num: 7,  name: "Paths & Pollinators",        section: "Localscapes" }, // alias
+  { num: 8,  name: "Localscapes Exhibit",        section: "Localscapes" },
+  { num: 8,  name: "Localscapes Entry Beds",     section: "Localscapes" }, // alias
+  { num: 9,  name: "Park Strip Hill",            section: "Localscapes" },
+  { num: 9,  name: "Park Strip #1",              section: "Localscapes" },
+  { num: 9,  name: "Park Strip #2",              section: "Localscapes" },
+  { num: 9,  name: "Park Strip #3",              section: "Localscapes" },
+  { num: 9,  name: "Park Strip #4",              section: "Localscapes" },
+  { num: 9,  name: "Park Strip #5",              section: "Localscapes" },
+  { num: 9,  name: "Park Strip #6",              section: "Localscapes" },
+  { num: 9,  name: "Park Strip #7",              section: "Localscapes" },
+  { num: 9,  name: "Park Strip #8",              section: "Localscapes" },
+  // Design
+  { num: 10, name: "Survey First",               section: "Design" },
+  { num: 11, name: "Initial Analysis",           section: "Design" },
+  { num: 12, name: "Climate Control",            section: "Design" },
+  { num: 13, name: "Scene or Unseen",            section: "Design" },
+  { num: 14, name: "The Produce Section",        section: "Design" },
+  { num: 15, name: "Hardscape Exhibit",          section: "Design" },
+  // Planting
+  { num: 16, name: "Perfect Planting",           section: "Planting" },
+  { num: 17, name: "Marvelous Mulch",            section: "Planting" },
+  { num: 18, name: "First Amendments",           section: "Planting" },
+  { num: 19, name: "Signature Soils",            section: "Planting" },
+  { num: 20, name: "Avoiding Erosion",           section: "Planting" },
+  { num: 21, name: "Nursery Shopping",           section: "Planting" },
+  // Irrigation
+  { num: 22, name: "Turf Tips",                  section: "Irrigation" },
+  { num: 23, name: "Turf Alternatives",          section: "Irrigation" },
+  { num: 24, name: "Irrigation Hardware",        section: "Irrigation" },
+  { num: 25, name: "Watering Drop by Drop",      section: "Irrigation" },
+  { num: 26, name: "Puddle Trouble",             section: "Irrigation" },
+  { num: 27, name: "The Right Way to Spray",     section: "Irrigation" },
+  { num: 28, name: "Mountain to Tap",            section: "Irrigation" },
+  { num: 29, name: "Effortless Irrigation",      section: "Irrigation" },
+  // Maintenance
+  { num: 30, name: "Moving Day",                 section: "Maintenance" },
+  { num: 31, name: "Outsmart Invaders",          section: "Maintenance" },
+  { num: 32, name: "Compost Salad",              section: "Maintenance" },
+  { num: 33, name: "Rain Gardening",             section: "Maintenance" },
+  { num: 34, name: "Backyard Makeover",          section: "Maintenance" },
+  { num: 35, name: "Maintenance Matters",        section: "Maintenance" },
+  { num: 36, name: "Rain Water Harvesting",      section: "Maintenance" },
+];
+
+const SECTION_ICONS = {
+  "Example Landscapes": "🏡",
+  "Localscapes": "🌿",
+  "Design": "📐",
+  "Planting": "🌱",
+  "Irrigation": "💧",
+  "Maintenance": "🔧",
+};
+
+function buildParkAreaIndex() {
+  // Maps area name → list of plant IDs found there
+  const index = {};
+  if (typeof PARK_LOCATIONS === "undefined") return index;
+
+  for (const [symbol, info] of Object.entries(PARK_LOCATIONS)) {
+    if (!info.locations) continue;
+    const plant = PLANTS.find((p) => p.symbol === symbol);
+    if (!plant) continue;
+    for (const loc of info.locations) {
+      for (const area of loc.areas) {
+        if (!index[area]) index[area] = [];
+        index[area].push(plant.id);
+      }
     }
   }
+  return index;
+}
 
-  const zones = Object.keys(grouped).sort();
-  if (!zones.length) {
-    container.innerHTML = '<div class="empty-state">No plants tagged with zones yet. Open a plant and select a park zone.</div>';
+function renderZones() {
+  const container = document.getElementById("zoneList");
+  const areaIndex = buildParkAreaIndex();
+
+  if (!Object.keys(areaIndex).length) {
+    container.innerHTML = '<div class="empty-state">No park location data available.</div>';
     return;
   }
 
-  let html = "";
-  for (const zone of zones) {
-    html += `<div class="category-header">\u{1F4CD} ${zone}</div>`;
-    for (const p of grouped[zone]) {
-      const d = userData[p.symbol];
-      html += `<div class="plant-card" data-id="${p.id}">
-        <div class="card-left">
-          <div class="card-symbol">${p.symbol}</div>
-          ${ratingDotHtml(d ? d.rating : null)}
-        </div>
-        <div class="card-body">
-          <div class="card-name">${p.name}</div>
-          <div class="card-botanical">${p.botanical}</div>
-        </div>
-        <div class="card-arrow">&#8250;</div>
-      </div>`;
+  // Build ordered zone list — numbered zones in map order, then "other"
+  const rendered = new Set();      // area names already shown
+  const usedAreaNames = new Set(PARK_ZONE_ORDER.map((z) => z.name));
+  let lastSection = "";
+  let html = '<div style="padding:12px 12px 4px;font-size:0.8rem;color:#555;">Tap a zone to expand · Plants appear in every zone where they grow</div>';
+
+  // Deduplicate PARK_ZONE_ORDER entries so each display name appears once
+  const seen = new Set();
+  const orderedZones = [];
+  for (const z of PARK_ZONE_ORDER) {
+    if (!seen.has(z.name)) {
+      seen.add(z.name);
+      orderedZones.push(z);
     }
   }
+
+  for (const zone of orderedZones) {
+    const plants = (areaIndex[zone.name] || []).map((id) => PLANTS[id]);
+    if (!plants.length) continue; // skip zones with no plants from our list
+
+    rendered.add(zone.name);
+
+    if (zone.section !== lastSection) {
+      lastSection = zone.section;
+      html += `<div class="park-section-header">${SECTION_ICONS[zone.section] || ""} ${zone.section}</div>`;
+    }
+
+    html += renderParkZoneBlock(zone.num, zone.name, plants);
+  }
+
+  // Other areas (not in the numbered map — parking lots, building entries, etc.)
+  const otherAreas = Object.keys(areaIndex).filter((a) => !rendered.has(a)).sort();
+  if (otherAreas.length) {
+    html += `<div class="park-section-header">🏛️ Other Areas</div>`;
+    for (const area of otherAreas) {
+      const plants = (areaIndex[area] || []).map((id) => PLANTS[id]);
+      if (plants.length) html += renderParkZoneBlock(null, area, plants);
+    }
+  }
+
   container.innerHTML = html;
-  container.querySelectorAll(".plant-card").forEach((card) => {
-    card.addEventListener("click", () => openDetail(parseInt(card.dataset.id, 10)));
+
+  // Collapsible toggle
+  container.querySelectorAll(".park-zone-header").forEach((header) => {
+    header.addEventListener("click", () => {
+      const block = header.closest(".park-zone-block");
+      block.classList.toggle("open");
+    });
   });
+
+  container.querySelectorAll(".plant-card").forEach((card) => {
+    card.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openDetail(parseInt(card.dataset.id, 10));
+    });
+  });
+}
+
+function renderParkZoneBlock(num, name, plants) {
+  const numBadge = num != null ? `<span class="zone-num-badge">${num}</span>` : "";
+  const count = plants.length;
+  let html = `<div class="park-zone-block">
+    <div class="park-zone-header">
+      ${numBadge}
+      <span class="park-zone-name">${name}</span>
+      <span class="zone-plant-count">${count} plant${count !== 1 ? "s" : ""}</span>
+      <span class="zone-chevron">›</span>
+    </div>
+    <div class="park-zone-plants">`;
+
+  for (const p of plants) {
+    const d = userData[p.symbol];
+    const rating = d ? d.rating : null;
+    html += `<div class="plant-card" data-id="${p.id}">
+      <div class="card-thumb">
+        <img src="images/${p.symbol}.jpg" alt="${p.name}" onerror="this.src='${placeholderSvg(p.category)}'">
+        <span class="card-symbol-label">${p.symbol}</span>
+        ${rating ? `<span class="card-rating-dot ${rating}"></span>` : ""}
+      </div>
+      <div class="card-body">
+        <div class="card-name">${p.name}</div>
+        <div class="card-botanical">${p.botanical}</div>
+      </div>
+      <div class="card-arrow">&#8250;</div>
+    </div>`;
+  }
+
+  html += `</div></div>`;
+  return html;
 }
 
 // ===== EXPORT =====
