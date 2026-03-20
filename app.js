@@ -322,9 +322,10 @@ function renderPlantList() {
     const hasNotes = d && d.notes;
     const hasPhotos = d && d.photos && d.photos.length > 0;
     html += `<div class="plant-card" data-id="${p.id}">
-      <div class="card-left">
-        <div class="card-symbol">${p.symbol}</div>
-        ${ratingDotHtml(rating)}
+      <div class="card-thumb">
+        <img src="images/${p.symbol}.jpg" alt="${p.name}" onerror="this.src='${placeholderSvg(p.category)}'">
+        <span class="card-symbol-label">${p.symbol}</span>
+        ${rating ? `<span class="card-rating-dot ${rating}"></span>` : ""}
       </div>
       <div class="card-body">
         <div class="card-name">${p.name}</div>

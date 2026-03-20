@@ -170,12 +170,12 @@ body {
   flex-shrink: 0;
   padding: 5px 12px;
   border-radius: 20px;
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   border: 1.5px solid var(--gray);
   background: transparent;
-  color: var(--text-light);
+  color: #444;
   transition: all 0.2s;
   white-space: nowrap;
 }
@@ -214,37 +214,50 @@ body {
   transform: scale(0.98);
 }
 
-.plant-card .card-left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
+.plant-card .card-thumb {
+  position: relative;
   flex-shrink: 0;
-  min-width: 42px;
-}
-
-.plant-card .card-symbol {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  overflow: hidden;
   background: var(--cream-dark);
-  color: var(--green);
+}
+
+.plant-card .card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.plant-card .card-symbol-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+  font-size: 0.6rem;
   font-weight: 700;
-  font-size: 0.7rem;
-  padding: 6px 4px;
-  border-radius: 8px;
   text-align: center;
-  min-width: 42px;
+  padding: 1px 0;
+  line-height: 1.2;
 }
 
-.plant-card .dot {
-  width: 12px;
-  height: 12px;
+.plant-card .card-rating-dot {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: var(--gray);
+  border: 1.5px solid #fff;
 }
 
-.plant-card .dot.love { background: var(--love); }
-.plant-card .dot.maybe { background: var(--maybe); }
-.plant-card .dot.skip { background: var(--skip); }
-.plant-card .dot.unreviewed { background: var(--gray); }
+.plant-card .card-rating-dot.love { background: var(--love); }
+.plant-card .card-rating-dot.maybe { background: var(--maybe); }
+.plant-card .card-rating-dot.skip { background: var(--skip); }
 
 .plant-card .card-body {
   flex: 1;
@@ -253,7 +266,8 @@ body {
 
 .plant-card .card-name {
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
+  color: var(--text);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -261,16 +275,16 @@ body {
 
 .plant-card .card-botanical {
   font-style: italic;
-  font-size: 0.8rem;
-  color: var(--text-light);
+  font-size: 0.9rem;
+  color: #444;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .plant-card .card-size {
-  font-size: 0.75rem;
-  color: var(--text-light);
+  font-size: 0.85rem;
+  color: #555;
   margin-top: 2px;
 }
 
@@ -285,8 +299,8 @@ body {
 }
 
 .plant-card .card-arrow {
-  color: var(--gray);
-  font-size: 1.2rem;
+  color: #888;
+  font-size: 1.4rem;
   flex-shrink: 0;
 }
 

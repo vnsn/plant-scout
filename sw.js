@@ -1,4 +1,4 @@
-const CACHE_NAME = 'plant-scout-v1';
+const CACHE_NAME = 'plant-scout-v2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
