@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="theme-color" content="#2d6a4f">
+  <title>Plant Scout - CGP</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="top-bar" id="topBar">
+    <h1>
+      <span>&#127793;</span> Plant Scout
+    </h1>
+    <div class="progress-text" id="progressText">0 / 123 reviewed</div>
+    <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width: 0%"></div></div>
+    <div class="search-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="searchInput" placeholder="Search plants..." autocomplete="off">
+      <button class="clear-btn" id="clearSearch">&times;</button>
+    </div>
+    <div class="filter-row" id="categoryFilters"></div>
+  </div>
+
+  <!-- ===== STATUS FILTER ===== -->
+  <div class="status-row" id="statusFilters">
+    <button class="status-chip active" data-status="all">All</button>
+    <button class="status-chip" data-status="unreviewed">Unreviewed</button>
+    <button class="status-chip" data-status="love">Love</button>
+    <button class="status-chip" data-status="maybe">Maybe</button>
+    <button class="status-chip" data-status="skip">Skip</button>
+  </div>
+
+  <!-- ===== MAIN VIEWS ===== -->
+
+  <!-- Plant List -->
+  <div class="view active" id="viewList">
+    <div class="plant-list" id="plantList"></div>
+  </div>
+
+  <!-- Favorites -->
+  <div class="view" id="viewFavorites">
+    <div class="plant-list" id="favList" style="padding-top:12px"></div>
+  </div>
+
+  <!-- Zones -->
+  <div class="view" id="viewZones">
+    <div class="plant-list" id="zoneList" style="padding-top:12px"></div>
+  </div>
+
+  <!-- Export -->
+  <div class="view" id="viewExport">
+    <div class="export-section" style="padding-top:20px">
+      <h2 style="font-size:1.2rem;margin-bottom:6px">&#128230; Export Your Data</h2>
+      <p style="font-size:0.85rem;color:#6c757d;margin-bottom:20px">
+        Save your field notes, ratings, and photos to transfer to your laptop.
+      </p>
+      <button class="export-btn primary" id="btnExportJSON">&#128229; Download Full Export (JSON)</button>
+      <button class="export-btn secondary" id="btnCopySummary">&#128203; Copy Summary to Clipboard</button>
+      <button class="export-btn tertiary" id="btnShareExport">&#128228; Share via Android Share</button>
+      <div id="exportStats" style="margin-top:20px;font-size:0.85rem;color:#6c757d"></div>
+    </div>
+  </div>
+
+  <!-- ===== PLANT DETAIL OVERLAY ===== -->
+  <div class="detail-overlay" id="detailOverlay">
+    <div class="detail-header">
+      <button class="back-btn" id="detailBack">&#8592;</button>
+      <div class="title">
+        <h2 id="detailName"></h2>
+        <div class="botanical-sub" id="detailBotanical"></div>
+      </div>
+      <div class="rating-dot" id="detailDot"></div>
+    </div>
+    <div class="detail-body">
+      <img class="detail-ref-photo" id="detailRefPhoto" alt="Reference photo" style="display:none">
+
+      <div class="detail-section">
+        <h3>Plant Info</h3>
+        <dl class="detail-meta">
+          <dt>Symbol</dt><dd id="detailSymbol"></dd>
+          <dt>Category</dt><dd id="detailCategory"></dd>
+          <dt>Subcategory</dt><dd id="detailSubcategory"></dd>
+          <dt>Size</dt><dd id="detailSize"></dd>
+        </dl>
+      </div>
+
+      <div class="detail-section">
+        <h3>Research Notes</h3>
+        <div class="detail-notes-csv" id="detailCsvNotes"></div>
+      </div>
+
+      <div class="detail-section">
+        <h3>Your Rating</h3>
+        <div class="rating-buttons">
+          <button class="rating-btn love" data-rating="love">&#128154; Love</button>
+          <button class="rating-btn maybe" data-rating="maybe">&#129300; Maybe</button>
+          <button class="rating-btn skip" data-rating="skip">&#128683; Skip</button>
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h3>Park Zone</h3>
+        <select class="zone-select" id="detailZone">
+          <option value="">-- Where did you find it? --</option>
+          <option value="Penstemon Plaza & Path Entrances">Penstemon Plaza & Path Entrances</option>
+          <option value="Localscapes Exhibit">Localscapes Exhibit (Front Yard, Park Strip)</option>
+          <option value="Paths & Pollinators">Paths & Pollinators Exhibit</option>
+          <option value="Waterwise Landscape Examples">Waterwise Landscape Examples</option>
+          <option value="Planting Bed Examples">Planting Bed Examples</option>
+          <option value="Vegetable Garden & Hardscapes">Vegetable Garden & Hardscapes</option>
+          <option value="Lawn & Irrigation Examples">Lawn & Irrigation Examples</option>
+          <option value="Rain Garden">Rain Garden</option>
+          <option value="General / Other">General / Other</option>
+          <option value="Not found at CGP">Not found at CGP</option>
+        </select>
+      </div>
+
+      <div class="detail-section">
+        <h3>Your Notes</h3>
+        <textarea class="notes-textarea" id="detailNotes" placeholder="What did you think? Size, color, placement ideas..."></textarea>
+      </div>
+
+      <div class="detail-section">
+        <h3>Your Photos</h3>
+        <div class="photo-grid" id="detailPhotos">
+          <label class="photo-add-btn">
+            <span class="camera-icon">&#128247;</span>
+            <span>Add Photo</span>
+            <input type="file" accept="image/*" capture="environment" id="photoInput" style="display:none">
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== BOTTOM NAV ===== -->
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-view="viewList">
+      <span class="nav-icon">&#127807;</span>
+      <span>Plants</span>
+    </button>
+    <button class="nav-btn" data-view="viewFavorites">
+      <span class="nav-icon">&#128154;</span>
+      <span>Favorites</span>
+    </button>
+    <button class="nav-btn" data-view="viewZones">
+      <span class="nav-icon">&#128205;</span>
+      <span>Zones</span>
+    </button>
+    <button class="nav-btn" data-view="viewExport">
+      <span class="nav-icon">&#128230;</span>
+      <span>Export</span>
+    </button>
+  </nav>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
